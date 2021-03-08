@@ -108,10 +108,10 @@ your Git pane is cleared up afterwards.d*
 ## But of those US-based Nobel laureates, many were born in other countries
 
 ``` r
-nobel_living_science %>% 
-     ggplot(aes(x = country_us,y=category, fill =category)) +
-     geom_bar(stat = "identity", position = "dodge", orientation 
- ="horizontal")
+nobel_living_science %>%
+    ggplot(aes(x = country_us,y=category, fill =category)) +
+   geom_bar(stat = "identity", position = "dodge") + 
+   coord_flip()
 ```
 
 ![](lab-05_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
