@@ -42,6 +42,7 @@ nobel <- read_csv("data/nobel.csv")
 ```{r}
 dim(nobel)
 ```
+represent one person who had get noble 
 935-observations
 26-variables 
 Each row represents information about a nobel prize winner.
